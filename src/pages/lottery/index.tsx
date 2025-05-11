@@ -5,6 +5,9 @@ import { ArrowLeft } from '@nutui/icons-react-taro'
 import { LuckyWheel, LuckyGrid, SlotMachine } from '@lucky-canvas/taro/react'
 import './index.less'
 import Taro from '@tarojs/taro'
+import lotteryBg from '../../static/lottery/bg.jpg'
+import startLotteryImg from '../../static/lottery/startlottery.png'
+import wheelBgImg from '../../static/lottery/wheelbg.png'
 
 function Index() {
   const myLucky = useRef(null)
@@ -12,7 +15,7 @@ function Index() {
     blocks: [{
       padding: '30px',
       imgs: [{
-        src: 'https://cdn.jsdelivr.net/gh/0326/imgs@main/blog/wheelbg.png',
+        src: wheelBgImg,
         width: '100%',
         height: '100%'
       }]
@@ -78,7 +81,7 @@ function Index() {
       {
         radius: '40px',
         imgs: [{
-          src: 'https://cdn.jsdelivr.net/gh/0326/imgs@main/blog/startlottery.png',
+          src: startLotteryImg,
           width: '100%',
           top: '-190%'
         }]
@@ -86,7 +89,7 @@ function Index() {
     ],
   };
   return (
-    <View className="nutui-page-lottery">
+    <View className="nutui-page-lottery" style={{ backgroundImage: `url(${lotteryBg})`}}>
       <NavBar
         safeAreaInsetTop
         fixed
