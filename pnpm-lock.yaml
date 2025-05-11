@@ -11,6 +11,12 @@ importers:
       '@babel/runtime':
         specifier: ^7.7.7
         version: 7.27.1
+      '@lucky-canvas/taro':
+        specifier: ^0.0.15
+        version: 0.0.15
+      '@nutui/icons-react-taro':
+        specifier: ^3.0.1
+        version: 3.0.1
       '@nutui/nutui-react-taro':
         specifier: ^2.3.10
         version: 2.7.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1084,6 +1090,9 @@ packages:
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
 
+  '@lucky-canvas/taro@0.0.15':
+    resolution: {integrity: sha512-oDn0EKOsKWin6Bnbk+SO2sm44ZA5z9+IQTImsk2GviOAWe0FqOV5d+65Y4ZMfl5dk9MgBTbGCWRwQR1AuahLHw==}
+
   '@napi-rs/triples@1.2.0':
     resolution: {integrity: sha512-HAPjR3bnCsdXBsATpDIP5WCrw0JcACwhhrwIAQhiR46n+jm+a2F8kBsfseAuWtSyQ+H3Yebt2k43B5dy+04yMA==}
 
@@ -1104,6 +1113,9 @@ packages:
 
   '@nutui/icons-react-taro@1.0.5':
     resolution: {integrity: sha512-p7dCW29wASH/qQ1OaUGGKA6PRV33wDPb80+qrHnWtT40syIb0W+e92mpplbULWM01s+GYVGyUU3i8b7Iy7qfvw==}
+
+  '@nutui/icons-react-taro@3.0.1':
+    resolution: {integrity: sha512-9n0bjd4USjEB481ugGTS1ujzm8WHvp9/JMUp53+NFNgmh9flGsOMOk/B5sMGp4sz4yQERmj4z0EmjYbDB7Q1cw==}
 
   '@nutui/jdesign-icons-react-taro@1.0.6-beta.2':
     resolution: {integrity: sha512-2Scz5c9o14gA7Mw5JdiEkc/KEbNlNWMcJMuqVyFVipYeeYN/118N/fvHVpocmJviN0Gc4P+u3ZB3dIQSA2j4Fw==}
@@ -4683,6 +4695,9 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
+  lucky-canvas@1.7.27:
+    resolution: {integrity: sha512-Ftz6qD+863bI7xijBmZg3dw3cNEc7odPr70EZQcGA14y3TgTAzH65HPosOCd6kKUlMwhntBaHMx3onoj9MtJRQ==}
+
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
@@ -7914,6 +7929,10 @@ snapshots:
 
   '@leichtgewicht/ip-codec@2.0.5': {}
 
+  '@lucky-canvas/taro@0.0.15':
+    dependencies:
+      lucky-canvas: 1.7.27
+
   '@napi-rs/triples@1.2.0': {}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
@@ -7933,6 +7952,8 @@ snapshots:
       fastq: 1.19.1
 
   '@nutui/icons-react-taro@1.0.5': {}
+
+  '@nutui/icons-react-taro@3.0.1': {}
 
   '@nutui/jdesign-icons-react-taro@1.0.6-beta.2': {}
 
@@ -12175,6 +12196,8 @@ snapshots:
   lru-cache@6.0.0:
     dependencies:
       yallist: 4.0.0
+
+  lucky-canvas@1.7.27: {}
 
   magic-string@0.30.17:
     dependencies:

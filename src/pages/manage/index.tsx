@@ -1,34 +1,21 @@
 import React from 'react'
 import { View } from '@tarojs/components'
 import { Button } from "@nutui/nutui-react-taro"
-import Taro from '@tarojs/taro'  // 新增 Taro 导入
 import './index.less'
 
 function Index() {
-
-  const handleClick = () => {
-    Taro.navigateTo({
-      url: '/pages/lottery/index'
-    })
-  }
-
   return (
     <View className="nutui-react-demo">
       <View className="index">
-        欢迎使用 NutUI React 开发 Taro 多端项目。
+        管理页面
       </View>
       <View className="index">
-        <Button 
-          type="primary" 
-          className="btn"
-          onClick={handleClick}  // 新增点击事件
-        >
+        <Button type="primary" className="btn">
           NutUI React Button {window.devicePixelRatio}
         </Button>
       </View>
     </View>
   )
 }
-
 
 export default Index

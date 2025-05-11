@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "myApp",
+  "projectname": "awesomeLottery",
   "description": "二次元大抽奖",
   "appid": "touristappid",
   "setting": {
